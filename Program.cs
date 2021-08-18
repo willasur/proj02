@@ -15,6 +15,13 @@ namespace CalulatorProject
             Console.WriteLine("Enter a Number:");
             Console.WriteLine("Enter another Number:");
 
+            //user options
+            Console.WriteLine($"Please Select An Operation");
+            Console.WriteLine($"Add");
+            Console.WriteLine($"Subtract");
+            Console.WriteLine($"Multiply");
+            Console.WriteLine($"Divide");
+
             {
 
 
