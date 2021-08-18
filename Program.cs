@@ -27,6 +27,9 @@ namespace CalulatorProject
             Console.WriteLine($"Multiply");
             Console.WriteLine($"Divide");
 
+            //user selected option
+            Console.Write("User's Choice:");
+
             //user selection
             Console.WriteLine($"Operation:");
 
