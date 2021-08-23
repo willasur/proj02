@@ -10,37 +10,56 @@ namespace CalulatorProject
            
 
             Console.WriteLine("Console Calculator");
+
+
             //ask user for a number
-
             Console.WriteLine("Enter a Number:");
-
             int num1 = Convert.ToInt32(Console.ReadLine());
 
+            //ask user for second number
             Console.WriteLine("Enter another Number:");
-
             int num2 = Convert.ToInt32(Console.ReadLine());
 
             //user options
-            Console.WriteLine($"Please Select An Operation:");
-            Console.WriteLine($"Add");
-            Console.WriteLine($"Subtract");
-            Console.WriteLine($"Multiply");
-            Console.WriteLine($"Divide");
+            Console.WriteLine("Please Select An Operation:");
+            Console.WriteLine("Add");
+            Console.WriteLine("Subtract");
+            Console.WriteLine("Multiply");
+            Console.WriteLine("Divide");
 
-            //user selected option
-            Console.Write("User's Choice:");
+            //user select option
+            Console.Write("Operation: ");
+            //user input stored in variable operation
+            string operation = Console.ReadLine();
 
-            //user selection
-            Console.WriteLine($"Operation:");
+
+            //user selection and equation
+            Console.WriteLine(num1 + operation  + num2);
+
+            //operation
 
 
-            {
+
+
+
+
+
+
+
+            
+            }
+
+            }
+
+
+
+            
 
 
             }
-        }
+        
 
-    }
-}
+    
+
     
 
