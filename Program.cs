@@ -34,20 +34,32 @@ namespace CalulatorProject
 
 
             //user selection and equation
-            Console.WriteLine(num1 + operation  + num2);
+            Console.WriteLine(num1 + (operation)  + num2 + " is equal to: ");
 
             //operation
 
-
-
-
-
-
-
-
-
-            
+            if (operation == "+")
+            {
+                Console.WriteLine(num1 + num2);
             }
+            if (operation == "-")
+            {
+                Console.WriteLine(num1 - num2);
+            }
+            if (operation == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            }
+            if (operation == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+
+
+
+
+
+        }
 
             }
 
