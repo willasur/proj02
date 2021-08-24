@@ -12,7 +12,11 @@ namespace CalulatorProject
             Console.WriteLine("Greetings, Math Whiz!");
             Console.WriteLine("Welcome to the C#onsole C#alculator");
 
-            //variables for operands, change to double, changed to int to display exception instead of infinity
+            /*variables for operands, change to double, changed to int to display exception instead of infinity
+            added bool and while so user is asked to enter a number again
+            **Things I was unable to execute:
+            a) ask user to input the second number after exception instead of asking for the first number again 
+            b) ask user enter a valid operator instead of exiting */
 
             int num1;
             int num2;
