@@ -56,7 +56,7 @@ namespace CalulatorProject
 
                     //equals and error message for invalid operator
                     string equal = " = ";
-                    string errormesg = " is not an equation, Please select +, -, * and / as an operator ";
+                    string errormesg = " is not an equation, Please select +, -, * and / as an operator and try again";
 
 
 
@@ -95,8 +95,8 @@ namespace CalulatorProject
                     //error message for invalid operator
 
                     else Console.WriteLine(num1 + (operation) + num2 + errormesg);
-                    carryon = false;
                     Console.ReadLine();
+                    
 
 
                 }
@@ -104,14 +104,14 @@ namespace CalulatorProject
                 catch (FormatException)
 
                 {
-                    Console.WriteLine("Format Exception, Use integers");
+                    Console.WriteLine("Format Exception, Please use integers");
                     carryon = false;
                 }
 
                 catch (DivideByZeroException)
 
                 {
-                    Console.WriteLine("Zero Exception, Don't use 0");
+                    Console.WriteLine("Zero Exception, Please avoid using 0");
                     carryon = false;
                 }
 
