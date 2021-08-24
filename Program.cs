@@ -8,41 +8,43 @@ namespace CalulatorProject
         {
 
 
-            //variables for operands, change to double
+            //variables for operands, change to double, changed to int to display exception instead of infinity
 
-            double num1;
-            double num2;
+            int num1;
+            int num2;
 
-
+            //used extra write line for padding 
+            Console.WriteLine("\n" + "\n");
             Console.WriteLine("Greetings, Math Whiz!");
-            Console.WriteLine("Welcome to C#onsole C#alculator");
+            Console.WriteLine("Welcome to the C#onsole C#alculator");
 
             try
             {
 
                 //ask user for a number
-                Console.WriteLine("Enter the First Operand:");
-                num1 = Convert.ToDouble(Console.ReadLine());
-
-
-
+                Console.WriteLine("\n" + "\n");
+                Console.WriteLine($"Enter the First Operand:");
+                num1 = Convert.ToInt32(Console.ReadLine());
+              
+               
 
                 //ask user for second number
+                Console.WriteLine("\n");
                 Console.WriteLine("Enter the Second Operand:");
-                num2 = Convert.ToDouble(Console.ReadLine());
-
-
-
-
+                num2 = Convert.ToInt32(Console.ReadLine());
+                
 
                 //user operator options
+                Console.WriteLine("\n");
                 Console.WriteLine("Please Choose an Operator:");
+                Console.WriteLine("");
                 Console.WriteLine("Add \t\t (+)");
                 Console.WriteLine("Subtract \t (-)");
                 Console.WriteLine("Multiply \t (*)");
                 Console.WriteLine("Divide \t \t (/)");
 
                 //user select option
+                Console.WriteLine("\n");
                 Console.Write("Operator Selected >>  ");
 
                 //user input stored in variable operation
@@ -51,14 +53,14 @@ namespace CalulatorProject
 
                 //equals and error message for invalid operator
                 string equal = " = ";
-                string errormesg = " is an invalid equation";
+                string errormesg = " is not an equation, Please select +, -, * and / as an operator ";
 
 
 
 
                 //operation
 
-
+                Console.WriteLine("");
                 if (operation == "+")
 
                 {
@@ -98,18 +100,18 @@ namespace CalulatorProject
             catch (FormatException)
 
             {
-                Console.WriteLine("Numbers Only");
+                Console.WriteLine("Format Exception, Use integers");
 
             }
 
             catch (DivideByZeroException)
 
             {
-                Console.WriteLine("0 is not good");
+                Console.WriteLine("Zero Exception, Don't use 0");
 
             }
-
-            Console.WriteLine("Have a Nice Day");
+            Console.WriteLine("");
+            Console.WriteLine("Thank you for using the C#alculator, Have a nice day :)");
             Console.ReadKey();
         }
 
