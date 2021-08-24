@@ -8,10 +8,10 @@ namespace CalulatorProject
         {
 
 
-            //variables for operands
+            //variables for operands, change to double
 
-            int num1;
-            int num2;
+            double num1;
+            double num2;
 
 
             Console.WriteLine("Greetings, Math Whiz!");
@@ -22,14 +22,14 @@ namespace CalulatorProject
 
                 //ask user for a number
                 Console.WriteLine("Enter the First Operand:");
-                num1 = Convert.ToInt32(Console.ReadLine());
+                num1 = Convert.ToDouble(Console.ReadLine());
 
 
 
 
                 //ask user for second number
                 Console.WriteLine("Enter the Second Operand:");
-                num2 = Convert.ToInt32(Console.ReadLine());
+                num2 = Convert.ToDouble(Console.ReadLine());
 
 
 
@@ -43,7 +43,7 @@ namespace CalulatorProject
                 Console.WriteLine("Divide \t \t (/)");
 
                 //user select option
-                Console.Write("Operation: ");
+                Console.Write("Operator Selected >>  ");
 
                 //user input stored in variable operation
                 string operation = Console.ReadLine();
