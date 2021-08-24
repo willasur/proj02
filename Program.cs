@@ -111,7 +111,7 @@ namespace CalulatorProject
 
             }
             Console.WriteLine("");
-            Console.WriteLine("Thank you for using the C#alculator, Have a nice day :)");
+            Console.WriteLine("Thank you for using the C#onsole C#alculator, \nHave a nice day :)");
             Console.ReadKey();
         }
 
