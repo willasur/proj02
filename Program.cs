@@ -8,39 +8,39 @@ namespace CalulatorProject
         {
 
 
-
+            //variables for operands
 
             int num1;
             int num2;
 
 
-
-            Console.WriteLine("Console Calculator");
+            Console.WriteLine("Greetings, Math Whiz!");
+            Console.WriteLine("Welcome to C#onsole C#alculator");
 
             try
             {
 
                 //ask user for a number
-                Console.WriteLine("Enter another Number:");
+                Console.WriteLine("Enter the First Operand:");
                 num1 = Convert.ToInt32(Console.ReadLine());
 
 
 
 
                 //ask user for second number
-                Console.WriteLine("Enter another Number:");
+                Console.WriteLine("Enter the Second Operand:");
                 num2 = Convert.ToInt32(Console.ReadLine());
 
 
 
 
 
-                //user options
-                Console.WriteLine("Please Select An Operation:");
-                Console.WriteLine("Add");
-                Console.WriteLine("Subtract");
-                Console.WriteLine("Multiply");
-                Console.WriteLine("Divide");
+                //user operator options
+                Console.WriteLine("Please Choose an Operator:");
+                Console.WriteLine("Add \t\t (+)");
+                Console.WriteLine("Subtract \t (-)");
+                Console.WriteLine("Multiply \t (*)");
+                Console.WriteLine("Divide \t \t (/)");
 
                 //user select option
                 Console.Write("Operation: ");
@@ -49,8 +49,8 @@ namespace CalulatorProject
                 string operation = Console.ReadLine();
 
 
-                //user selection and equation
-                string equal = " is equal to:";
+                //equals and error message for invalid operator
+                string equal = " = ";
                 string errormesg = " is an invalid equation";
 
 
@@ -60,25 +60,33 @@ namespace CalulatorProject
 
 
                 if (operation == "+")
+
                 {
-                    Console.WriteLine(num1 + (operation) + num2 + equal);
-                    Console.WriteLine(num1 + num2);
+                    Console.WriteLine(num1 + " + " + num2 + equal + (num1 + num2));
+                    
                 }
+
                 else if (operation == "-")
+
                 {
-                    Console.WriteLine(num1 + (operation) + num2 + equal);
-                    Console.WriteLine(num1 - num2);
+                    Console.WriteLine(num1 + " - " + num2 + equal + (num1 - num2));
+            
                 }
+
                 else if (operation == "*")
+
                 {
-                    Console.WriteLine(num1 + (operation) + num2 + equal);
-                    Console.WriteLine(num1 * num2);
+                    Console.WriteLine(num1 + " x " + num2 + equal + (num1 * num2));
+                  
                 }
+
                 else if (operation == "/")
+                // used  actual division sign in equation
                 {
-                    Console.WriteLine(num1 + (operation) + num2 + equal);
-                    Console.WriteLine(num1 / num2);
+                    Console.WriteLine(num1 + " \u00f7 " + num2 + equal + (num1 / num2));   
+
                 }
+
                 //error message for invalid operator
 
                 else Console.WriteLine(num1 + (operation) + num2 + errormesg);
@@ -86,16 +94,22 @@ namespace CalulatorProject
                 Console.ReadLine();
 
             }
-
+            // format exception and divide by zero exception
             catch (FormatException)
+
             {
                 Console.WriteLine("Numbers Only");
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("0 is not good");
+
             }
 
+            catch (DivideByZeroException)
+
+            {
+                Console.WriteLine("0 is not good");
+
+            }
+
+            Console.WriteLine("Have a Nice Day");
             Console.ReadKey();
         }
 
